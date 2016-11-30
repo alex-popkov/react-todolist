@@ -14,7 +14,6 @@ class Layout extends Component{
           className="layout">
           <Header />
           <List />
-          <List />
       </div>
     );
   }

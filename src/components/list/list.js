@@ -4,16 +4,38 @@ import './stylesheets/list.css';
 
 class List extends Component{
 
-  render( ){
+    constructor( props ){
 
-    return(
+        super( props );
 
-      <div
-          className="list">
-          list
-      </div>
-    );
-  }
+        this.state = {
+
+            texts: [ 'test1', 'test2']
+        };
+
+        autoBind( this );
+    }
+
+    render( ){
+
+        return(
+
+          <div>
+              { this.state.texts.map( text => this.renderList( text ) ) }
+          </div>
+        );
+    }
+
+    renderList( text ){
+
+        return(
+
+            <div
+                className="list">
+                {text}
+            </div>
+        );
+    }
 }
 
 export default List;
