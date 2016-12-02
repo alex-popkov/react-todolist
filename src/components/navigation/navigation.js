@@ -30,7 +30,7 @@ class Navigation extends Component{
 
           <div
             className = "navigation">
-              { this.state.texts.map( text => this.renderNavigation( text ) ) }
+            { this.state.texts.map( text => this.renderNavigation( text ) ) }
           </div>
         );
     }
@@ -46,7 +46,7 @@ class Navigation extends Component{
 
             <div
                 className = "navigation-item">
-                {text}
+                { text }
             </div>
         );
     }

@@ -46,7 +46,7 @@ class List extends Component{
 
             <div
                 className="list-item">
-                {text}
+                { text }
             </div>
         );
     }
