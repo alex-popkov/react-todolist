@@ -4,10 +4,22 @@ import './stylesheets/header.css';
 
 class Header extends Component{
 
-    /**
-     * Render header element.
-     * @return {Element}
-     **/
+    constructor( props ){
+
+        super( props );
+
+        this.state = {
+
+            title: 'TODO list app'
+        };
+
+        autoBind( this );
+    }
+
+/**
+ * Render header element.
+ * @return {Element}
+ **/
   render( ){
 
     return(
@@ -16,7 +28,7 @@ class Header extends Component{
             className="header">
             <div
                 className = "header--title">
-                TODO list app
+                {this.state.title}
             </div>
         </div>
     );

@@ -7,23 +7,23 @@ import './stylesheets/list.css';
  * List component
  **/
 class List extends Component{
-    
+
     constructor( props ){
 
         super( props );
 
         this.state = {
 
-            texts: [ 'test1', 'test2']
+            texts: [ 'test1', 'test2' ]
         };
 
         autoBind( this );
     }
 
-    /**
-     * Render list element.
-     * @return {Element}
-     **/
+/**
+ * Render list element.
+ * @return {Element}
+ **/
     render( ){
 
         return(
@@ -34,11 +34,11 @@ class List extends Component{
         );
     }
 
-    /**
-     * Render list item element.
-     * @param {string} text
-     * @return {element}
-     **/
+/**
+ * Render list item element.
+ * @param {string} text
+ * @return {element}
+ **/
     renderList( text ){
 
         return(

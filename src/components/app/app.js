@@ -9,10 +9,17 @@ import './stylesheets/app.css';
 
 class App extends Component{
 
-  /**
-   * Render application element
-   * @return {Element}
-   **/
+  constructor( props ){
+
+    super( props );
+
+    autoBind( this );
+  }
+
+/**
+ * Render application element
+ * @return {Element}
+ **/
   render( ){
 
     return(

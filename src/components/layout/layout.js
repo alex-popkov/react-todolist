@@ -6,10 +6,17 @@ import './stylesheets/layout.css';
 
 class Layout extends Component{
 
-    /**
-     * Render layout element.
-     * @return {Element}
-     **/
+    constructor( props ){
+
+        super( props );
+
+        autoBind( this );
+    }
+
+/**
+ * Render layout element.
+ * @return {Element}
+ **/
   render( ){
 
     return(
