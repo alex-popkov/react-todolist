@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 import autoBind from 'react-autobind';
 import './stylesheets/list.css';
 
-class List extends Component{
 
+/**
+ * List component
+ **/
+class List extends Component{
+    
     constructor( props ){
 
         super( props );
@@ -16,6 +20,10 @@ class List extends Component{
         autoBind( this );
     }
 
+    /**
+     * Render list element.
+     * @return {Element}
+     **/
     render( ){
 
         return(
@@ -26,6 +34,11 @@ class List extends Component{
         );
     }
 
+    /**
+     * Render list item element.
+     * @param {string} text
+     * @return {element}
+     **/
     renderList( text ){
 
         return(

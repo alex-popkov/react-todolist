@@ -4,6 +4,10 @@ import './stylesheets/header.css';
 
 class Header extends Component{
 
+    /**
+     * Render header element.
+     * @return {Element}
+     **/
   render( ){
 
     return(

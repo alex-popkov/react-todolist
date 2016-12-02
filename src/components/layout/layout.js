@@ -6,6 +6,10 @@ import './stylesheets/layout.css';
 
 class Layout extends Component{
 
+    /**
+     * Render layout element.
+     * @return {Element}
+     **/
   render( ){
 
     return(
