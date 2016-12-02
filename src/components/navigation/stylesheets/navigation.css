@@ -1,0 +1,14 @@
+div.navigation {
+
+  position: fixed;
+  box-sizing: border-box;
+  padding: 10px;
+  top: 56px;
+  left: 0;
+  width: 232px;
+  overflow-y: hidden;
+}
+div.navigation:hover {
+
+  overflow-y: auto;
+}

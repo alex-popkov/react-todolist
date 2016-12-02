@@ -2,7 +2,7 @@ div.header {
 
     display: flex;
     background-color: #f2f2f2;
-    height: 50px;
+    height: 56px;
     color: #212121;
 }
 div.header div.header--title {

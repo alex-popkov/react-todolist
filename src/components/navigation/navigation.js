@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
-import './stylesheets/list.css';
+import './stylesheets/navigation.css';
 
 
 /**
- * List component
+ * Navigation component
  **/
-class List extends Component{
+class Navigation extends Component{
 
     constructor( props ){
 
@@ -21,7 +21,7 @@ class List extends Component{
     }
 
 /**
- * Render list element.
+ * Render Navigation element.
  * @return {Element}
  **/
     render( ){
@@ -29,27 +29,27 @@ class List extends Component{
         return(
 
           <div
-            className = "list">
-            { this.state.texts.map( text => this.renderList( text ) ) }
+            className = "navigation">
+              { this.state.texts.map( text => this.renderNavigation( text ) ) }
           </div>
         );
     }
 
 /**
- * Render list item element.
+ * Render Navigation item element.
  * @param {string} text
  * @return {element}
  **/
-    renderList( text ){
+    renderNavigation( text ){
 
         return(
 
             <div
-                className="list-item">
+                className = "navigation-item">
                 {text}
             </div>
         );
     }
 }
 
-export default List;
+export default Navigation;

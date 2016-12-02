@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import autoBind from 'react-autobind';
 import Header from '../header/header';
+import Navigation from '../navigation/navigation';
 import List from '../list/list';
 import './stylesheets/layout.css';
 
@@ -24,6 +25,7 @@ class Layout extends Component{
       <div
           className="layout">
           <Header />
+          <Navigation />
           <List />
       </div>
     );
